@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Barlow, Barlow_Condensed, IBM_Plex_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const barlow = Barlow({
@@ -55,6 +56,7 @@ export default function RootLayout({
     <html lang="en" className={`${barlow.variable} ${barlowCondensed.variable} ${ibmPlexMono.variable}`}>
       <body className="antialiased bg-background text-cream font-sans">
         {children}
+        <Analytics />
       </body>
     </html>
   );
