@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Hero() {
   const handleScroll = (href: string) => {
@@ -82,9 +83,11 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="flex-1 flex items-center justify-center py-12"
         >
-          <img
+          <Image
             src="/axis-logo.png"
             alt="AXIS"
+            width={220}
+            height={220}
             style={{ width: "clamp(140px, 18vw, 220px)", height: "auto", mixBlendMode: "screen" }}
           />
         </motion.div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
@@ -15,11 +16,6 @@ const navLinks = [
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -53,7 +49,7 @@ export default function Navigation() {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="flex items-center group"
         >
-          <img src="/axis-logo.png" alt="AXIS" style={{ height: 44, width: "auto", mixBlendMode: "screen" }} />
+          <Image src="/axis-logo.png" alt="AXIS" width={44} height={44} style={{ height: 44, width: "auto", mixBlendMode: "screen" }} />
         </button>
 
         {/* Desktop Nav Links */}
@@ -130,12 +126,3 @@ export default function Navigation() {
   );
 }
 
-function AxisLogo() {
-  return (
-    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" suppressHydrationWarning>
-      <path d="M4 4 L32 32" stroke="#c95a2a" strokeWidth="3.5" strokeLinecap="round" suppressHydrationWarning />
-      <path d="M32 4 L4 32" stroke="#c95a2a" strokeWidth="3.5" strokeLinecap="round" suppressHydrationWarning />
-      <path d="M9 18 L27 18" stroke="#c95a2a" strokeWidth="3" strokeLinecap="round" suppressHydrationWarning />
-    </svg>
-  );
-}
