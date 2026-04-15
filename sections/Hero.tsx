@@ -82,11 +82,11 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="flex-1 flex items-center justify-center py-12"
         >
-          <svg viewBox="0 0 100 100" fill="none" style={{ width: "clamp(90px, 12vw, 140px)", height: "clamp(90px, 12vw, 140px)" }}>
-            <path d="M10 10 L90 90" stroke="#c95a2a" strokeWidth="9" strokeLinecap="round" />
-            <path d="M90 10 L10 90" stroke="#c95a2a" strokeWidth="9" strokeLinecap="round" />
-            <path d="M25 58 L75 58" stroke="#c95a2a" strokeWidth="8" strokeLinecap="round" />
-          </svg>
+          <img
+            src="/axis-logo.png"
+            alt="AXIS"
+            style={{ width: "clamp(140px, 18vw, 220px)", height: "auto" }}
+          />
         </motion.div>
 
         {/* Divider */}

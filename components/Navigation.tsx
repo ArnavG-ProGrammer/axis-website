@@ -51,15 +51,9 @@ export default function Navigation() {
         {/* Logo */}
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="flex items-center gap-3 group"
+          className="flex items-center group"
         >
-          {mounted && <AxisLogo />}
-          <span
-            className="text-cream text-xl tracking-widest uppercase"
-            style={{ fontFamily: "var(--font-barlow-condensed), sans-serif" }}
-          >
-            AXIS
-          </span>
+          <img src="/axis-logo.png" alt="AXIS" style={{ height: 44, width: "auto" }} />
         </button>
 
         {/* Desktop Nav Links */}
