@@ -88,7 +88,7 @@ export default function Hero() {
             alt="AXIS"
             width={220}
             height={220}
-            style={{ width: "clamp(140px, 18vw, 220px)", height: "auto", mixBlendMode: "screen" }}
+            style={{ width: "clamp(140px, 18vw, 220px)", height: "auto" }}
           />
         </motion.div>
 
