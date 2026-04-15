@@ -53,7 +53,7 @@ export default function Navigation() {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="flex items-center group"
         >
-          <img src="/axis-logo.png" alt="AXIS" style={{ height: 44, width: "auto" }} />
+          <img src="/axis-logo.png" alt="AXIS" style={{ height: 44, width: "auto", mixBlendMode: "screen" }} />
         </button>
 
         {/* Desktop Nav Links */}

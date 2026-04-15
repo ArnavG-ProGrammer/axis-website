@@ -85,7 +85,7 @@ export default function Hero() {
           <img
             src="/axis-logo.png"
             alt="AXIS"
-            style={{ width: "clamp(140px, 18vw, 220px)", height: "auto" }}
+            style={{ width: "clamp(140px, 18vw, 220px)", height: "auto", mixBlendMode: "screen" }}
           />
         </motion.div>
 
